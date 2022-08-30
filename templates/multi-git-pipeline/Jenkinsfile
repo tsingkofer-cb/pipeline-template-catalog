@@ -5,9 +5,9 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/${repoBranch1}']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'repo1']], userRemoteConfigs: [[url: '${repoUrl1}']]])
+        checkout([$class: 'GitSCM', branches: [[name: "*/${repoBranch1}"]], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'repo1']], userRemoteConfigs: [[url: "${repoUrl1}"]]])
 
-        checkout([$class: 'GitSCM', branches: [[name: '*/${repoBranch2}']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'repo2']], userRemoteConfigs: [[url: '${repoUrl2}']]])
+        checkout([$class: 'GitSCM', branches: [[name: "*/${repoBranch2}"]], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'repo2']], userRemoteConfigs: [[url: "${repoUrl2}"]]])
       }
     }
     stage('Build') {
