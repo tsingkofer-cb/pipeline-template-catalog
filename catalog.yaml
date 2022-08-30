@@ -1,0 +1,4 @@
+type: pipeline-template-catalog
+version: 1
+name: tyler-demo-catalog
+displayName: Pipeline Template Catalog by Tyler Singkofer

@@ -1,0 +1,16 @@
+type: pipeline-template
+version: 1
+name: Multiple Git Repo Pipeline Template
+parameters:
+  - name: repoUrl1
+    type: string
+    displayName: Git Repository 1
+  - name: repoBranch1
+    type: string
+    displayName: Git Branch 1
+  - name: repoUrl2
+    type: string
+    displayName: Git Repository 2
+  - name: repoBranch2
+    type: string
+    displayName: Git Branch 2
