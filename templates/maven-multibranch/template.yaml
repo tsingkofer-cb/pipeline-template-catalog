@@ -1,0 +1,13 @@
+type: pipeline-template
+version: 1
+name: Multibranch Maven Template
+templateType: MULTIBRANCH
+parameters:
+  - name: repoUrl
+    type: string
+    displayName: Git Repository
+multibranch:
+  branchSource:
+    git:
+      remote: ${repoUrl}
+  markerFile: pom.xml
