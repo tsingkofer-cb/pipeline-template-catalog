@@ -1,6 +1,6 @@
 type: pipeline-template
 version: 1
-name: Multibranch NodeJS Template
+name: NodeJS Multibranch Pipeline Template
 templateType: MULTIBRANCH
 parameters:
   - name: repoUrl
