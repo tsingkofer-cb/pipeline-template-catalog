@@ -23,5 +23,10 @@ spec:
         """
       }
     }
+    stage('FindBugs Quality Gate'){
+      steps{
+        recordIssues qualityGates: [[threshold: 5, type: 'TOTAL', unstable: false]], tools: [findBugs()]
+      }
+    }
   }
 }
