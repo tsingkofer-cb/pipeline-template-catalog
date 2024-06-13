@@ -1,0 +1,15 @@
+type: pipeline-template
+version: 1
+name: MBP Shell Template
+templateType: MULTIBRANCH
+parameters:
+  - name: repoName
+    type: string
+    displayName: GitHub Repository Name
+multibranch:
+  branchSource:
+    github:
+      repoOwner: tsingkofer-cb
+      repository: ${repoName}
+  markerFile: Jenkinsfile
+  
